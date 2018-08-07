@@ -13,6 +13,8 @@ Change ros-kinetic-cheyo-image to the name you want the imaged to be called.
 
 Make sure to change the linked volume after the -v flag.
 
+Read more about the options here: https://github.com/ConSol/docker-headless-vnc-container
+
 I taged my image as `masters3d/ros-kinetic-cheyo-image` but you should be able to change this name with your local image. 
 
 ## Source 
