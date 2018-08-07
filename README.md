@@ -11,6 +11,9 @@ Change ros-kinetic-cheyo-image to the name you want the imaged to be called.
 ## Run and mount a directory
 `docker run -it --user 0  -e VNC_RESOLUTION='1280x768' -p 5901:5901 -p 6901:6901 -v /Volumes/github/Brandeis/assignments-masters3d:/assignments masters3d/ros-kinetic-cheyo-image:latest /bin/bash`
 
+Dont forget to run: `source /opt/ros/kinetic/setup.sh` to set up the image. 
+You may need to add the ros path `export PATH="$PATH:/opt/ros/kinetic/bin"`
+
 Make sure to change the linked volume after the -v flag.
 
 Read more about the options here: https://github.com/ConSol/docker-headless-vnc-container
