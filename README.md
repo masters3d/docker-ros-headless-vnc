@@ -28,4 +28,6 @@ https://github.com/brandeislatte/docker-ros/blob/master/Dockerfile
 VNC Headless  
 https://github.com/ConSol/docker-headless-vnc-container/blob/master/Dockerfile.ubuntu.xfce.vnc
 
+Read more about the VNC options here: https://github.com/ConSol/docker-headless-vnc-container
+
 
