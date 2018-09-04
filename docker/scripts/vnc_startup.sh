@@ -34,6 +34,9 @@ if [[ $1 =~ -h|--help ]]; then
     exit 0
 fi
 
+# ROS Specific
+echo 'source /opt/ros/kinetic/setup.sh' >> $HOME/.bashrc
+
 # should also source $STARTUPDIR/generate_container_user
 source $HOME/.bashrc
 

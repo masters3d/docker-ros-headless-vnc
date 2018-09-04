@@ -29,6 +29,14 @@ RUN add-apt-repository -y ppa:levi-armstrong/qt-libraries-xenial \
   && apt update && apt install -y qt59creator qt57creator-plugin-ros \
   && rm -rf /var/likb/apt/lists/*
 
+# Updating the version of Gazebo7
+# http://gazebosim.org/tutorials?cat=install&tut=install_ubuntu&ver=7.0
+
+RUN sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+RUN wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+RUN sudo apt-get update && apt-get install -y \
+  gazebo7
+
 # The following came from https://github.com/ConSol/docker-headless-vnc-container/blob/master/Dockerfile.ubuntu.xfce.vnc
 # See ./docker/license
 
